@@ -6,12 +6,9 @@ import { getBase64, getSockets } from "../lib/helper.js";
 const cookieOption = {
   maxAge: 2 * 24 * 60 * 60 * 1000,
   httpOnly: true,
-  secure: false,
-  sameSite: "lax",
+  secure: true,
+  sameSite: "None",
 };
-{
-  /*  bad me sahi krna hai secure aur samesite ko */
-}
 const connectDb = async (uri) => {
   try {
     const data = await mongoose.connect(uri);
