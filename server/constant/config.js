@@ -1,5 +1,5 @@
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://chat-liard-theta.vercel.app",
   credentials: true,
 };
 
